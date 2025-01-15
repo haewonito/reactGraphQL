@@ -1,13 +1,14 @@
 import { gql } from '@apollo/client';
 
-export const GET_USERS = gql`
+export const GET_COUNTRIES = gql`
 query {
-    Media(id: 1, type: ANIME) {
-        id
-    title {
-            romaji
-            english
-            native
-        }
+  countries {
+    name
+    languages {
+      name
     }
+    continent {
+      name
+    }
+  }
 }`;
