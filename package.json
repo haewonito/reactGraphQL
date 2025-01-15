@@ -1,6 +1,9 @@
 {
   "dependencies": {
     "@apollo/client": "^3.12.6",
+    "@babel/preset-react": "^7.26.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.4",
     "graphql": "^16.10.0"
   }
 }

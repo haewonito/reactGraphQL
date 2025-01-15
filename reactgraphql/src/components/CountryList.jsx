@@ -1,5 +1,5 @@
 import { useQuery } from '@apollo/client';
-import { GET_COUNTRIES } from '../queries';
+import { GET_COUNTRIES } from '../queries/queries';
 
 function CountryList() {
     const { loading, error, data } = useQuery(GET_COUNTRIES);
