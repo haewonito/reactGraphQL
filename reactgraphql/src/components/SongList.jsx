@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useQuery } from '@apollo/client';
-import { GET_COUNTRIES } from '../queries/queries';
+import { GET_COUNTRIES } from '../queries/CountryQuery';
 
 import React, { Component } from 'react';
 
