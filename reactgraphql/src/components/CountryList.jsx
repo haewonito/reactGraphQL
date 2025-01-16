@@ -9,7 +9,7 @@ function CountryList() {
     return (
         <div>
             <h2>Country List</h2>
-            <ul>
+            <ul className="collection">
                 {data.countries.map((country) => {
                     // Safely handle the languages array
                     const firstLanguage = country.languages && country.languages.length > 0
@@ -19,9 +19,9 @@ function CountryList() {
                     const capital = country.capital || "No capital available";
 
                     return (
-                        <li key={country.code}>
+                        <ul key={country.code} className="collection-item">
                             {country.name} - {capital} - {firstLanguage}
-                        </li>
+                        </ul>
                     );
                 })}
             </ul>
